@@ -1,0 +1,15 @@
+{
+  "objective": "binary",
+  "metric": "binary_logloss",
+  "boosting_type": "gbdt",
+  "verbose": -1,
+  "random_state": 42,
+  "feature_pre_filter": false,
+  "num_leaves": 15,
+  "learning_rate": 0.05,
+  "feature_fraction": 0.9,
+  "bagging_fraction": 0.8,
+  "min_data_in_leaf": 20,
+  "reg_alpha": 0.1,
+  "reg_lambda": 0.1
+}

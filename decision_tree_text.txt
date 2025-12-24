@@ -1,0 +1,53 @@
+决策树模型（max_depth=4）
+================================================================================
+
+|--- age <= -0.96
+|   |--- marital_status <= -0.39
+|   |   |--- claim_history <= 0.80
+|   |   |   |--- premium_amount <= 2.11
+|   |   |   |   |--- class: 0
+|   |   |   |--- premium_amount >  2.11
+|   |   |   |   |--- class: 1
+|   |   |--- claim_history >  0.80
+|   |   |   |--- occupation <= 0.21
+|   |   |   |   |--- class: 1
+|   |   |   |--- occupation >  0.21
+|   |   |   |   |--- class: 0
+|   |--- marital_status >  -0.39
+|   |   |--- marital_status <= 1.22
+|   |   |   |--- occupation <= 0.54
+|   |   |   |   |--- class: 1
+|   |   |   |--- occupation >  0.54
+|   |   |   |   |--- class: 0
+|   |   |--- marital_status >  1.22
+|   |   |   |--- policy_end_date_year <= 0.18
+|   |   |   |   |--- class: 0
+|   |   |   |--- policy_end_date_year >  0.18
+|   |   |   |   |--- class: 0
+|--- age >  -0.96
+|   |--- age <= 1.13
+|   |   |--- occupation <= 1.21
+|   |   |   |--- class: 1
+|   |   |--- occupation >  1.21
+|   |   |   |--- marital_status <= -0.39
+|   |   |   |   |--- class: 1
+|   |   |   |--- marital_status >  -0.39
+|   |   |   |   |--- class: 1
+|   |--- age >  1.13
+|   |   |--- family_members <= 0.05
+|   |   |   |--- education_level <= 0.68
+|   |   |   |   |--- class: 1
+|   |   |   |--- education_level >  0.68
+|   |   |   |   |--- class: 0
+|   |   |--- family_members >  0.05
+|   |   |   |--- marital_status <= 1.22
+|   |   |   |   |--- class: 1
+|   |   |   |--- marital_status >  1.22
+|   |   |   |   |--- class: 0
+
+
+================================================================================
+模型准确率: 0.9133
+特征数量: 18
+树深度: 4
+叶子节点数: 15

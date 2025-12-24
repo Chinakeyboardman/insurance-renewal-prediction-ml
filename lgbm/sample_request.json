@@ -1,0 +1,18 @@
+{
+  "policy_id": 10001,
+  "age": 56,
+  "gender": "女",
+  "birth_region": "黑龙江省",
+  "insurance_region": "黑龙江省",
+  "income_level": "高",
+  "education_level": "本科",
+  "occupation": "医生",
+  "marital_status": "离异",
+  "family_members": 5,
+  "policy_type": "守护百分百2021",
+  "policy_term": "20年",
+  "premium_amount": 14931.0,
+  "policy_start_date": "2019-08-27",
+  "policy_end_date": "2039-08-27",
+  "claim_history": "否"
+}
